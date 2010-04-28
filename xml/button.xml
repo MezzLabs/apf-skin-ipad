@@ -1,0 +1,101 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:button name="arrow_button">
+        <a:style><![CDATA[
+            .ipad_arrow_button {
+                display             : block;
+                height              : 31px;
+                float               : left;
+                cursor              : default;
+                margin              : 6px 1px 0 3px;
+                text-decoration     : none;
+                color               : white;
+                font-family         : Arial;
+                font-size           : 12px;
+                font-weight         : bold;
+                text-align          : center;
+                padding             : 0 4px 0 0;
+                background-image    : url("images/ipad_toolbar_button_right.png");
+                background-repeat   : no-repeat;
+                background-position : right 0;
+                text-shadow : -1px -1px #596674;
+                overflow:hidden;
+            }
+            
+            .ipad_arrow_button DIV {
+                background-image    : url("images/ipad_toolbar_button_left.png");
+                background-repeat   : no-repeat;
+                background-position : left 0;
+                padding:8px 4px 0 18px;
+                margin : 0;
+                height : 31px;
+                border : 0;
+                overflow:hidden;
+            }
+
+            
+            .ipad_arrow_buttonOver {
+            }
+            
+            .ipad_arrow_buttonOver DIV {
+            }
+    
+            .ipad_arrow_buttonDown {
+                background-position : right -31px;
+            }
+            
+            .ipad_arrow_buttonDown DIV {
+                background-position : left -31px;
+            }
+    
+            .ipad_arrow_buttonDisabled {
+            }
+             
+            .ipad_arrow_buttonDisabled DIV {
+            }
+            
+            .ipad_arrow_buttonIcon DIV {
+                padding-left : 4px;
+            }
+            
+            .ipad_arrow_buttonEmpty DIV {
+                padding : 4px 0 0 7px;
+            }
+            
+            .ipad_arrow_buttonIcon SPAN.icon {
+                display : block;
+                float   : left;
+                width   : 20px;
+                height  : 20px;
+                margin  : 6px 2px 0 2px;
+            }
+            
+            .ipad_arrow_buttonIcon SPAN.caption {
+                display     : block;
+                float       : left;
+                margin      : 9px 0 0 0;
+                padding     : 0 4px 0 0;
+                white-space : nowrap;
+            }
+            
+            .ipad_arrow_buttonEmpty SPAN.icon {
+                margin : -1px 3px 0 0;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main 
+              caption    = "div/span[2]/text()" 
+              background = "div/span" 
+              icon       = "div/span"
+              minheight  = "31" 
+              maxheight  = "31">
+                <div class="ipad_arrow_button">
+                    <div>
+                        <span class="icon"></span>
+                        <span class="caption">-</span>
+                    </div>
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:button>
+</a:skin>

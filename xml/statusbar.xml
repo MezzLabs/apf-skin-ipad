@@ -1,0 +1,127 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <!--a:toolbar name="statusbar">
+        <a:style><![CDATA[
+            .ipad_toolbar_small .ipad_menubar {
+                background    : url(images/ipad_bar_small_backg.png) repeat-x top left;
+                height        : 44px;
+                font-family   : Tahoma;
+                font-size     : 11px;
+                border-top    : 1px solid #cccccc;
+                position      : relative;
+            }
+            
+            .noborder .ipad_toolbar_small {
+                border       : 1px solid #c3c3c3;
+                border-width : 0 1px 0 1px;
+            }
+            
+            .ipad_toolbar_small .ipad_subbar {
+                background    : url(images/ipad_bar_small_backg.png) repeat-x top left;
+                height        : 44px;
+                font-family   : Tahoma;
+                font-size     : 11px;
+                position      : relative;
+                border-top : 2px solid #e1e1e1;
+                padding       : 0;
+                width         : 100%;
+            }
+            
+            .ipad_toolbar_small .ipad_divider {
+                border-left  : 1px solid #6b6b6b;
+                border-right : 1px solid #6b6b6b;
+                height       : 18px;
+                float        : left;
+                margin       : 14px 0 0 2px;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main container="." minheight="44" maxheight="44">
+                <div class="ipad_toolbar_small"> </div>
+            </a:main>
+            <a:bar container="." inherit="true">
+                <div class="ipad_subbar">
+                   
+                </div>
+            </a:bar>
+            <a:menubar container="." inherit="true">
+                <div class="ipad_menubar">
+                </div>
+            </a:menubar>
+            <a:button link="ipad_toolbarbutton" inherit="true" />
+            <a:divider inherit="true">
+                <div class='ipad_divider'> </div>
+            </a:divider>
+        </a:presentation>
+    </a:toolbar-->
+    <a:statusbar name="statusbar">
+        <a:style><![CDATA[
+            .ipad_statusbar {
+                border-top : 1px solid #cccccc;
+                overflow   : hidden;
+                color      : #4b4b4b;
+                background : url(images/ipad_bar_small_backg.png) repeat-x top left;
+                height     : 44px;
+                width      : 100%;
+                overflow   : hidden;
+                position   : absolute;
+                bottom     : 0;
+                padding    : 0;
+            }
+        
+            .ipad_statusbar .ipad_sbsection {
+                padding      : 0 5px 0 5px;
+                font-size    : 11px;
+                font-family  : Tahoma;
+                background   : no-repeat 3px 1px;
+                height       : 44px;
+                float        : left;
+                margin       : 2px 0 0 0;
+                border-right : 1px solid #c3c3c3;
+                border-left  : 1px solid #FFFFFF;
+                position     : relative;
+            }
+            
+            .ipad_statusbar .ipad_sbsectionLast {
+                float        : none;
+                margin       : 0 0 0 0;
+                border-right : 0;
+                position     : relative;
+                overflow     : hidden;
+            }
+            
+            .ipad_statusbar .ipad_sbsectionIcon {
+                padding-left : 23px
+            }
+            
+            .windowMax .ipad_statusbar .ipad_corner {
+                display : none;
+            }
+        
+            .ipad_statusbar .ipad_corner {
+                width    : 13px;
+                height   : 13px;
+                position : absolute;
+                right    : 0;
+                top      : 7px;
+                display  : block;
+            }
+            
+            .sbbare {
+                position   : relative;
+                border-top : 0;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main container="." corner="span" minheight="44" maxheight="44">
+                <div class='ipad_statusbar'>
+                    <span class='ipad_corner'></span>
+                </div>
+            </a:main>
+            <a:section icon="." caption="text()" container="." inherit="true">
+                <div class='ipad_sbsection'> </div>
+            </a:section>
+        </a:presentation>
+    </a:statusbar>
+</a:skin>

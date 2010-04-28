@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:include src="list.xml" />
+    <a:include src="toolbar.xml" />
+    <a:include src="textbox.xml" />
+    <a:include src="button.xml" />
+    <a:include src="modalwindow.xml" />
+    <a:include src="statusbar.xml" />
+</a:skin>

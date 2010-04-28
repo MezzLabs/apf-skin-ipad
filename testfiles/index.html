@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        <!--meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /-->
+        
+        <script src="../../../../source/trunk/apf.js"></script>
+    </head>
+    <body style="background-color:#333333;margin:0;">
+        <a:skin src="../xml/_index.xml" media-path="../images/" icon-path="../icns/" />
+        
+        <a:model id="mdlPictures"> 
+            <pictures> 
+                <picture src="img16.jpg" name="Sunflower"></picture>
+                <picture src="img7.jpg" name="Antenna"></picture>
+                <picture src="img17.jpg" name="City"></picture>
+                <picture src="img18.jpg" name="Meeting"></picture>
+                <picture src="img14.jpg" name="Flower"></picture>
+                <picture src="img4.jpg" name="Sky"></picture>
+                <picture src="img21.jpg" name="The country"></picture>
+                <picture src="img22.jpg" name="River"></picture>
+                <picture src="img24.jpg" name="Wool"></picture>
+                <picture src="img25.jpg" name="Fabric"></picture>
+                <picture src="img26.jpg" name="Ocean"></picture>
+            </pictures> 
+        </a:model>
+       
+        <a:window 
+          visible = "true"
+          left    = "10" 
+          top     = "10">
+            <a:toolbar left="0" right="0" top="0" height="63" skin="toolbar">
+                <a:bar>
+                    <a:textbox width="130" right="30" top="15" initial-message="Search" />
+                </a:bar>
+            </a:toolbar>
+            <a:list skin="list" top="63" left="0" width="256" height="897" canrename="false">
+                <a:each match="[email]">
+                    <a:caption match="[text()]" />
+                    <a:icon match="[@icon]" />
+                </a:each>
+                <a:model>
+                    <data>
+                        <email icon="icon6.png">Music</email>
+                        <email icon="icon1.png">Search</email>
+                        <email icon="icon4.png">Camera</email>
+                        <email icon="icon5.png">Trash</email>
+                        <email icon="icon3.png">Notes</email>
+                        <email icon="icon2.png">Contacts</email>
+                        <email icon="icon7.png">DVD Disc</email>
+                    </data>
+                </a:model>
+            </a:list>
+            <a:list 
+              id         = "listPics" canrename="false"
+              skin       = "thumbnail" 
+              model      = "mdlPictures"
+              left="256" right="0" top="63" height="897">
+                <a:each match="[picture]">
+                    <a:caption match="[@name]" />
+                    <a:image   match="[@src]" 
+                        value="images/slideshow_img/[@src]" />
+                </a:each>
+                <a:drag match="[picture]" />
+            </a:list>
+            <a:statusbar left="0" right="0" bottom="0" height="44">
+                <a:section>
+                    <a:button skin="arrow_button" width="100">Back</a:button>
+                </a:section>
+            </a:statusbar>
+        </a:window>
+    </body>
+</html>

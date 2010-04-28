@@ -1,0 +1,321 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:list name="thumbnail">
+        <a:style><![CDATA[
+            .ipad_listicons {
+                background-color  : white;
+                width             : 450px;
+                height            : 500px;
+                position          : relative;
+                overflow-x        : hidden;
+                overflow-y        : auto;
+                padding           : 16px 15px 10px 30px;
+                cursor            : default;
+            }
+
+            .ipad_listicons, 
+            .dragipad_listicon {
+                font-family : Arial;
+                font-size   : 12px;
+            }
+    
+            .ipad_listicons DIV, 
+            .dragipad_listicon {
+                padding       : 0;
+                float         : left;
+                display       : inline;
+                margin-bottom : 10px;
+                overflow      : hidden;
+                position      : relative;
+                width         : 150px;
+                height        : 160px;
+            }
+    
+            .ipad_listicons BLOCKQUOTE, 
+            .dragipad_listicon BLOCKQUOTE {
+                width      : 132px;
+                height     : 132px;
+                margin     : 2px auto;
+                background : no-repeat 50% 50%;
+                border     : 1px solid #b7b7b7;
+                
+            }
+            
+            .ipad_listicons .selected BLOCKQUOTE, 
+            .dragipad_listicon BLOCKQUOTE {
+            }
+            
+            .ipad_listicons.ipad_listiconsfocus .selected BLOCKQUOTE {
+            }
+    
+            .ipad_listicons INPUT {
+                float   : left;
+                margin  : -1px 0 0 0;
+                display : none;
+            }
+    
+            .ipad_listicons LABEL, 
+            .dragipad_listicon LABEL {
+                padding    : 0 0 0 0;
+                margin     : 0 0 0 1px;
+                height     : 29px;
+                overflow   : hidden;
+                display    : block;
+                text-align : center;
+                position   : relative;
+            }
+    
+            .ipad_listicons SPAN, 
+            .dragipad_listicon SPAN {
+                text-decoration : none;
+                position        : relative;
+                overflow        : hidden;
+                color           : black;
+                cursor          : default;
+                padding         : 1px 3px 1px 2px;
+                margin          : 1px auto 0 auto;
+                text-align      : center;
+                font-weight     : bold;
+            }
+            
+            .ipad_listicons .selected SPAN {
+                background-color : #f0f0f0;
+                color            : black;
+            }
+    
+            .ipad_listiconsFocus .selected SPAN {
+                background-color : #0088f4;
+                color            : white;
+            }
+    
+            .ipad_listicons #txt_rename {
+                border      : 1px solid black;
+                float       : none;
+                padding     : 1px 5px 1px 1px;
+                font-family : Tahoma;
+                font-size   : 8pt;
+                color       : black;
+                word-break  : keep-all;
+                overflow    : visible;
+                margin      : 0px;
+                cursor      : text;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main container=".">
+                <div class="ipad_listicons"> </div>
+            </a:main>
+            <a:item
+                class   = "."
+                caption = "label/span/text()"
+                image   = "blockquote"
+                select  = ".">
+                <div><blockquote></blockquote><label><span>-</span></label></div>
+            </a:item>
+            <a:dragindicator>
+                <div class='dragipad_listicon'><blockquote></blockquote><label><span>-</span></label></div>
+            </a:dragindicator>
+            <a:loading>
+                <div class="loading">Loading...</div>
+            </a:loading>
+            <a:empty caption="text()">
+                <div class="empty">-</div>
+            </a:empty>
+        </a:presentation>
+    </a:list>
+    
+    <a:list name="list">
+        <a:style><![CDATA[
+            .ipad_list {
+                overflow         : hidden;
+                position         : relative;
+                background-color : #f5f6f8;
+                cursor           : default;
+                height           : auto;
+                border-right:2px solid #e1e1e1;
+            }
+        
+            .white {
+                background : white;
+            }
+            
+            .ipad_list .list_header {
+                position:relative;
+                overflow:auto;
+                height:20px;
+                padding-top:3px;
+                font-size:13px;
+                font-family:Arial;
+                text-align:center;
+                font-weight:bold;
+                color:white;
+                background-image    : url(images/ipad_list_title_backg.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+            }
+            
+            .ipad_list .list_content {
+                position:relative;
+                overflow:auto;
+            }
+        
+            .ipad_list, 
+            .dragipad_list {
+                font-family : Tahoma;
+                font-size   : 8pt;
+            }
+        
+            .ipad_list DIV.item, 
+            .dragipad_list {
+                padding : 0;
+                height  : 43px;
+            }
+        
+            .ipad_list SPAN, 
+            .dragipad_list SPAN {
+                height              : 30px;
+                float               : left;
+                width               : auto;
+                position            : relative;
+                background-repeat   : no-repeat;
+                padding:13px 0 0 50px;
+            }
+            
+            .ipad_list SPAN BLOCKQUOTE, 
+            .dragipad_list SPAN BLOCKQUOTE{
+                margin:0;
+                padding:0;
+                width:26px;
+                height:26px;
+                position:absolute;
+                left:9px;
+                top:9px;
+                background-repeat:no-repeat;
+                background-position:0 -26px;
+            }
+            
+            .ipad_list .selected SPAN BLOCKQUOTE {
+                background-position:0 0;
+            }
+        
+            .ipad_list U, 
+            .dragipad_list U {
+                text-decoration : none;
+                color           : black;
+                cursor          : default;
+                display         : block;
+                white-space     : nowrap;
+                position        : relative;
+                font-size       : 13px;
+                font-family     : Arial;
+                font-weight     : bold;
+            }
+        
+            .ipad_listFocus .indicate U {
+                color : black;
+            }
+        
+            .ipad_list .selected {
+                background-image    : url(images/ipad_list_selected.png);
+                background-position : 0 -43px;
+                background-repeat   : repeat-x;
+            }
+            
+            .ipad_listFocus .selected, 
+            .dragipad_list {
+                background-image    : url(images/ipad_list_selected.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+            }
+            
+            .ipad_list .selected U,
+            .ipad_listFocus .selected U {
+                color       : white;
+                text-shadow : -1px -1px black;
+                filter      : dropshadow(color=#000000,offX=-1,offY=-1);
+            }
+        
+            .ipad_list #txt_rename {
+                border      : 1px solid #bbb;
+                padding     : 1px 15px 1px 1px;
+                font-family : Tahoma;
+                font-size   : 8pt;
+                color       : black;
+                word-break  : keep-all;
+                overflow    : visible;
+                margin-top  : 0px;
+                cursor      : text;
+                height      : 13px;
+                display     : block;
+                outline     : none;
+            }
+        
+            .ipad_list .empty, 
+            .ipad_list .offline, 
+            .ipad_list .loading {
+                text-align  : center;
+                padding     : 8px 0 0 5px;
+                color       : #AAA;
+                font-weight : normal;
+            }
+        
+            .shortipad_list {
+                border     : 0;
+                overflow-y : auto;
+                overflow-x : hidden;
+                max-height : 90px;
+                width      : auto;
+            }
+            
+            .ipad_listDrop {
+                border : 1px solid #25a8e7;
+            }
+        
+            .dragipad_list_multiple {
+                border     : 2px solid black;
+                width      : 10px;
+                height     : 5px;
+                padding    : 0;
+                background : none;
+            }
+        
+            .dragipad_list_multiple span {
+                display : none;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main container="div[2]">
+                <div class="ipad_list">
+                    <div class="list_header">Library</div>
+                    <div class="list_content"> </div>
+                </div>
+            </a:main>
+            <a:item
+              class   = "."
+              caption = "span/u"
+              icon    = "span/blockquote"
+              select  = ".">
+                <div class="item">
+                    <span>
+                        <u>-</u>
+                        <blockquote> </blockquote>
+                    </span>
+                </div>
+            </a:item>
+            <a:dragindicator>
+                <div class="dragipad_list">
+                    <span>
+                        <u>-</u>
+                    </span>
+                </div>
+            </a:dragindicator>
+            <a:loading>
+                <div class="loading">Loading...</div>
+            </a:loading>
+            <a:empty caption=".">
+                <div class="message">-</div>
+            </a:empty>
+        </a:presentation>
+    </a:list>
+</a:skin>

@@ -1,0 +1,480 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:modalwindow name="window">
+        <a:style><![CDATA[
+            .ipaddevice {
+                position : relative;
+                width    : 994px;
+                height   : 1276px;
+                overflow : hidden;
+            }
+            
+            .ipaddevice .tl_corner {
+                background-image    : url(images/ipad_tl_corner.png);
+                background-position :  0 0;
+                background-repeat   : no-repeat;
+                width               : 115px;
+                height              : 127px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+            }
+            
+            .ipaddevice .tr_corner {
+                background-image    : url(images/ipad_tr_corner.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 111px;
+                height              : 127px;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+            }
+            
+            .ipaddevice .title {
+                background-image    : url(images/ipad_t_border.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 768px;
+                height              : 127px;
+                position            : absolute;
+                top                 : 0;
+                left                : 115px;
+                right               : 195px;
+            }
+            
+            .ipaddevice .title BLOCKQUOTE {
+                display : none;
+            }
+            
+            .ipaddevice .bl_corner {
+                background-image    : url(images/ipad_bl_corner.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 115px;
+                height              : 125px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 0;
+            }
+            
+            .ipaddevice .br_corner {
+                background-image    : url(images/ipad_br_corner.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 111px;
+                height              : 125px;
+                position            : absolute;
+                bottom              : 0;
+                right               : 0;
+            }
+            
+            .ipaddevice .border_b {
+                background-image    : url(images/ipad_b_border.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                height              : 125px;
+                width               : 768px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 115px;
+                right               : 195px;
+            }
+            
+            .ipaddevice .border_l {
+                background-image    : url(images/ipad_l_border.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 115px;
+                height              : 1024px;
+                position            : absolute;
+                bottom              : 333px;
+                top                 : 127px;
+                left                : 0;
+            }
+            
+            .ipaddevice .border_r {
+                background-image    : url(images/ipad_r_border.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 111px;
+                height              : 1024px;
+                position            : absolute;
+                bottom              : 333px;
+                top                 : 127px;
+                right               : 0;
+            }
+            
+            .ipaddevice .small_bar {
+                position         : absolute;
+                overflow         : hidden;
+                top              : 127px;
+                width:768px;
+                height:20px;
+                left             : 115px;
+                background-image    : url(images/ipad_top_bar.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                background-color:black;
+            }
+            
+            .ipaddevice .content {
+                position         : absolute;
+                overflow         : hidden;
+                top              : 147px;
+                right            : 111px;
+                bottom           : 125px;
+                left             : 115px;
+                background-color : white;
+                font-family      : Arial;
+                font-size        : 12px;
+            }
+            
+            
+            .cover {
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : absolute;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            #apf_outline {
+    
+            }
+            
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main 
+              collapsed-height = "30"
+              minwidth         = "994"
+              maxwidth         = "994"
+              minheight        = "1276"
+              maxheight        = "1276"
+              container        = "div[6]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              buttons          = "div[3]/blockquote">
+                <div class="ipaddevice">
+                    <div class="tl_corner"> </div>
+                    <div class="tr_corner"> </div>
+                    <div class="title">
+                        <blockquote> </blockquote>
+                    </div>
+                    
+                    <div class="border_l"> </div>
+                    <div class="border_r"> </div>
+                    <div class="content"> </div>
+                
+                    <div class="bl_corner"> </div>
+                    <div class="br_corner"> </div>
+                    <div class="border_b"> </div>
+                    <div class="small_bar"> </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class='cover'> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    
+    <a:modalwindow name="firefox15">
+        <a:style><![CDATA[
+            .win_firefox15 {
+                position : relative;
+                width    : 600px;
+                height   : 400px;
+                overflow : hidden;
+            }
+            
+            .win_firefox15 .wff15_corner_tl {
+                background-image    : url(images/win_ff_15_corner_tl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+            }
+            
+            .win_firefox15 .wff15_corner_tr {
+                background-image    : url(images/win_ff_15_corner_tr.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+            }
+            
+            .win_firefox15 .wff15_border_t {
+                background-image    : url(images/win_ff_15_border_t.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                left                : 4px;
+                right               : 4px;
+            }
+            
+            .win_firefox15 .wff15_corner_bl {
+                background-image    : url(images/win_ff_15_corner_bl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 0;
+            }
+            
+            .win_firefox15 .wff15_corner_br {
+                background-image    : url(images/win_ff_15_corner_br.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                right               : 0;
+            }
+            
+            .win_firefox15 .wff15_border_b {
+                background-image    : url(images/win_ff_15_border_b.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 4px;
+                right               : 4px;
+            }
+            
+            .win_firefox15 .wff15_border_l {
+                background-image    : url(images/win_ff_15_border_l.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 4px;
+                position            : absolute;
+                bottom              : 4px;
+                top                 : 4px;
+                left                : 0;
+            }
+            
+            .win_firefox15 .wff15_border_r {
+                background-image    : url(images/win_ff_15_border_r.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 4px;
+                position            : absolute;
+                bottom              : 4px;
+                top                 : 4px;
+                right               : 0;
+            }
+            
+            .win_firefox15 .wff15_browser_bar {
+                position         : absolute;
+                overflow         : hidden;
+                top              : 23px;
+                height           : 20px;
+                left             : 4px;
+                right            : 4px;
+            }
+            
+            .win_firefox15 .wff15_content {
+                position         : absolute;
+                overflow         : hidden;
+                top              : 43px;
+                right            : 4px;
+                bottom           : 4px;
+                left             : 4px;
+                background-color : white;
+                font-family      : Tahoma;
+                font-size        : 11px;
+            }
+            
+            .win_firefox15 .wff15_title {
+                height:16px;
+                position:absolute;
+                top:4px;
+                padding:2px 0 0 23px;
+                left:4px;
+                right:4px;
+                background-image    : url(images/win_ff_15_title.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                overflow:hidden;
+                border-bottom:1px solid #d4d0c8;
+                margin:0;
+                color:white;
+                font-size:11px;
+                font-weight:bold;
+                font-family:Tahoma;
+            }
+            
+            .win_firefox15 .wff15_title SPAN.icon {
+                width:16px;
+                height:16px;
+                position:absolute;
+                top:1px;
+                left:2px;
+                overflow:hidden;
+                background-repeat:no-repeat;
+                background-position:0 0;
+            }
+            
+            .win_firefox15 .wff15_title BLOCKQUOTE {
+                margin:0;
+                padding:2px;
+                position:absolute;
+                height:14px;
+                width:50px;
+                right:0;
+                top:0;
+            }
+            
+            .win_firefox15 .wff15_title BLOCKQUOTE DIV {
+                margin:0;
+                padding:0;
+                width:16px;
+                height:14px;
+                float:right;
+                position:relative;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_firefox15 .wff15_title BLOCKQUOTE DIV.close {
+                margin-left:2px;
+                background-image    : url(images/win_ff_15_buttons.png);
+                background-position : 0 -42px;
+            }
+            
+            .win_firefox15 .wff15_title BLOCKQUOTE DIV.max {
+                background-image    : url(images/win_ff_15_buttons.png);
+                background-position : 0 -14px;
+            }
+            
+            .win_firefox15Max .wff15_title BLOCKQUOTE DIV.max {
+                background-image    : url(images/win_ff_15_buttons.png);
+                background-position : 0 -28px;
+            }
+            
+            .win_firefox15 .wff15_title BLOCKQUOTE DIV.min {
+                background-image    : url(images/win_ff_15_buttons.png);
+                background-position : 0 0;
+            }
+            
+            .win_firefox15 .wff15_title BLOCKQUOTE .close.down {
+                background-position : -16px -42px;
+            }
+            
+            .win_firefox15 .wff15_title BLOCKQUOTE .max.down {
+                background-position : -16px -14px;
+            }
+            
+            .win_firefox15Max .wff15_title BLOCKQUOTE .max.down {
+                background-position : -16px -28px;
+            }
+            
+            .win_firefox15 .wff15_title BLOCKQUOTE .min.down {
+                background-position : -16px 0;
+            }
+            
+            .cover {
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : absolute;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            #apf_outline {
+    
+            }
+            
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isIE7"><![CDATA[
+            .win_firefox15 .wff15_title BLOCKQUOTE DIV.down {
+                background-position-x : -16px;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main 
+              collapsed-height = "30"
+              min-height       = "100"
+              min-width        = "100"
+              container        = "div[6]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              icon             = "div[3]/span"
+              buttons          = "div[3]/blockquote">
+                <div class="win_firefox15">
+                    <div class="wff15_corner_tl"> </div>
+                    <div class="wff15_corner_tr"> </div>
+                    <div class="wff15_title">
+                        -
+                        <blockquote> </blockquote>
+                        <span class="icon"> </span>
+                    </div>
+                    
+                    <div class="wff15_border_l"> </div>
+                    <div class="wff15_border_r"> </div>
+                    <div class="wff15_content"> </div>
+                    
+                    <div class="wff15_corner_bl"> </div>
+                    <div class="wff15_corner_br"> </div>
+                    <div class="wff15_border_b"> </div>
+                    <div class="wff15_border_t"> </div>
+                    <div class="wff15_browser_bar"> </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class="cover"> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+</a:skin>

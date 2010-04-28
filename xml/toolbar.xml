@@ -1,0 +1,54 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:toolbar name="toolbar">
+        <a:style><![CDATA[
+            .ipad_toolbar .ipad_menubar {
+                background    : url(images/ipad_search_bar_backg.png) repeat-x top left;
+                height        : 63px;
+                font-family   : Tahoma;
+                font-size     : 11px;
+                border-bottom : 1px solid #c3c3c3;
+                position      : relative;
+            }
+            
+            .noborder .ipad_toolbar {
+                border       : 1px solid #c3c3c3;
+                border-width : 0 1px 0 1px;
+            }
+            
+            .ipad_toolbar .ipad_subbar {
+                background    : url(images/ipad_search_bar_backg.png) repeat-x top left;
+                height        : 63px;
+                font-family   : Tahoma;
+                font-size     : 11px;
+                position      : relative;
+                padding       : 0;
+                width         : 100%;
+            }
+            
+            .ipad_toolbar .ipad_divider {
+                border-left  : 1px solid #6b6b6b;
+                border-right : 1px solid #6b6b6b;
+                height       : 18px;
+                float        : left;
+                margin       : 14px 0 0 2px;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main container="." minheight="63" maxheight="63">
+                <div class="ipad_toolbar"> </div>
+            </a:main>
+            <a:bar container="." inherit="true">
+                <div class="ipad_subbar"> </div>
+            </a:bar>
+            <a:menubar container="." inherit="true">
+                <div class="ipad_menubar">
+                </div>
+            </a:menubar>
+            <a:button link="ipad_toolbarbutton" inherit="true" />
+            <a:divider inherit="true">
+                <div class='ipad_divider'> </div>
+            </a:divider>
+        </a:presentation>
+    </a:toolbar>
+</a:skin>
